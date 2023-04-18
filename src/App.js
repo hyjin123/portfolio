@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Intro from "./components/Intro";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <div className="App-header">
           <NavBar />
+          <Intro />
           <About />
           <Projects />
           <Contact />

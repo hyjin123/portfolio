@@ -1,3 +1,11 @@
 .about-container {
-  margin: 12em;
+  padding: 12em;
+  /* color: #ccf381; */
+  color: black;
+  /* background-color: #4831d4; */
+  background-color: white;
+}
+
+.about-header {
+  color: #ee4e34;
 }

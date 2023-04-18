@@ -3,8 +3,8 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <div className="about-container" id="projects">
-      <div>List of Projects</div>
+    <div className="projects-container" id="projects">
+      <h2 className="projects-header">List of Projects</h2>
       <p>These are my projects</p>
     </div>
   );

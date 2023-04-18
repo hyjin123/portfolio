@@ -4,22 +4,31 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .name {
-  color: black;
+  color: #ee4e34;
+  font-weight: 500;
 }
 
 .link {
+  color: black;
   text-decoration: none;
   margin: 2em;
   margin-top: 2em;
 }
 
 .link:visited {
-  color: green;
+  color: black;
+}
+
+.link:active {
+  color: purple;
 }
 
 .link:hover {
-  color: hotpink;
+  color: #ee4e34;
 }
