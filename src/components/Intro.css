@@ -1,9 +1,53 @@
 .intro-container {
-  padding: 12em;
   color: black;
   background-color: #eae7dc;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-header {
   color: #ee4e34;
+  margin: 10px;
+}
+
+.see-projects {
+  padding: 12px 3em;
+  background-color: #ee4e34;
+  border-radius: 5px;
+  box-shadow: rgba(177, 126, 126, 0.24) 0px 3px 8px;
+  font-size: 0.9em;
+}
+
+.see-projects:hover {
+  cursor: pointer;
+}
+
+.intro-content {
+  font-size: 0.8em;
+  padding-top: 0.6em;
+  padding-bottom: 1.2em;
+}
+
+/* For content responsive sizing */
+/* Mobile */
+.intro-container {
+  padding: 0 20px;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .intro-container {
+    padding: 0 5em;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .intro-container {
+    padding: 0 5em;
+  }
 }

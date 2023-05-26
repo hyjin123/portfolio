@@ -1,7 +1,10 @@
 .projects-container {
-  padding: 12em;
   color: black;
   background-color: #eae7dc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects-header {

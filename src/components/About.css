@@ -1,9 +1,12 @@
 .about-container {
-  padding: 12em;
   /* color: #ccf381; */
   color: black;
   /* background-color: #4831d4; */
   background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-header {

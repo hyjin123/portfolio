@@ -1,6 +1,8 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import "./NavBar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function NavBar() {
   return (
@@ -11,7 +13,7 @@ function NavBar() {
           className="link"
           to="#home"
           scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "center" })
+            el.scrollIntoView({ behavior: "smooth", block: "nearest" })
           }
         >
           Home
@@ -20,7 +22,7 @@ function NavBar() {
           className="link"
           to="#about"
           scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "center" })
+            el.scrollIntoView({ behavior: "smooth", block: "start" })
           }
         >
           About
@@ -29,7 +31,7 @@ function NavBar() {
           className="link"
           to="#projects"
           scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "center" })
+            el.scrollIntoView({ behavior: "smooth", block: "start" })
           }
         >
           Projects
@@ -38,7 +40,7 @@ function NavBar() {
           className="link"
           to="#contact"
           scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "center" })
+            el.scrollIntoView({ behavior: "smooth", block: "start" })
           }
         >
           Contact
