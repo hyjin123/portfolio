@@ -2,6 +2,7 @@ import React from "react";
 import "./Burger.css";
 
 function Burger({ hamburgerOpen, setHamburgerOpen, style, setStyle }) {
+  // style1 is when the hamburger is closed, style2 is when the hamburger is opened
   return (
     <button
       className="hamburger-button"
@@ -14,9 +15,9 @@ function Burger({ hamburgerOpen, setHamburgerOpen, style, setStyle }) {
         }
       }}
     >
-      <div className="hamburger-div"></div>
-      <div className="hamburger-div"></div>
-      <div className="hamburger-div"></div>
+      <div className={`hamburger-div-${style}`}></div>
+      <div className={`hamburger-div-${style}`}></div>
+      <div className={`hamburger-div-${style}`}></div>
     </button>
   );
 }

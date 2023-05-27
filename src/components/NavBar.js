@@ -8,6 +8,7 @@ import Menu from "./Menu";
 
 function NavBar() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  // used to toggle hambuger in and out based on click
   const [style, setStyle] = useState("style1");
 
   return (
