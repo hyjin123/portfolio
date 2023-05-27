@@ -1,0 +1,39 @@
+.style1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f5745f;
+  height: 60vh;
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.style2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f5745f;
+  height: 60vh;
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hashlink {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}

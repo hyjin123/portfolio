@@ -1,56 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Burger from "./Burger";
+import Menu from "./Menu";
 
 function NavBar() {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const [style, setStyle] = useState("style1");
+
   return (
     <div className="link-container">
       <div className="name">Sean Jin</div>
-      <button className="hamburger-button">
-        <div className="hamburger-div"></div>
-        <div className="hamburger-div"></div>
-        <div className="hamburger-div"></div>
-      </button>
-      <div>
-        {/* <HashLink
-          className="link"
-          to="#home"
-          scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "end" })
-          }
-        >
-          Home
-        </HashLink>
-        <HashLink
-          className="link"
-          to="#about"
-          scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "end" })
-          }
-        >
-          About
-        </HashLink>
-        <HashLink
-          className="link"
-          to="#projects"
-          scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "end" })
-          }
-        >
-          Projects
-        </HashLink>
-        <HashLink
-          className="link"
-          to="#contact"
-          scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "end" })
-          }
-        >
-          Contact
-        </HashLink> */}
-      </div>
+      <Burger
+        hamburgerOpen={hamburgerOpen}
+        setHamburgerOpen={setHamburgerOpen}
+        style={style}
+        setStyle={setStyle}
+      />
+      <Menu
+        hamburgerOpen={hamburgerOpen}
+        setHamburgerOpen={setHamburgerOpen}
+        style={style}
+      />
     </div>
   );
 }
