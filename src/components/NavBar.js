@@ -8,12 +8,17 @@ function NavBar() {
   return (
     <div className="link-container">
       <div className="name">Sean Jin</div>
+      <button className="hamburger-button">
+        <div className="hamburger-div"></div>
+        <div className="hamburger-div"></div>
+        <div className="hamburger-div"></div>
+      </button>
       <div>
-        <HashLink
+        {/* <HashLink
           className="link"
           to="#home"
           scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "nearest" })
+            el.scrollIntoView({ behavior: "smooth", block: "end" })
           }
         >
           Home
@@ -22,7 +27,7 @@ function NavBar() {
           className="link"
           to="#about"
           scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "start" })
+            el.scrollIntoView({ behavior: "smooth", block: "end" })
           }
         >
           About
@@ -31,7 +36,7 @@ function NavBar() {
           className="link"
           to="#projects"
           scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "start" })
+            el.scrollIntoView({ behavior: "smooth", block: "end" })
           }
         >
           Projects
@@ -40,11 +45,11 @@ function NavBar() {
           className="link"
           to="#contact"
           scroll={(el) =>
-            el.scrollIntoView({ behavior: "smooth", block: "start" })
+            el.scrollIntoView({ behavior: "smooth", block: "end" })
           }
         >
           Contact
-        </HashLink>
+        </HashLink> */}
       </div>
     </div>
   );
