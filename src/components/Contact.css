@@ -3,10 +3,17 @@
   color: black;
   /* background-color: #4831d4; */
   background-color: white;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.contact-container p {
+  font-size: 0.8em;
+  padding: 0 6em;
+  max-width: 800px;
 }
 
 .contact-header {
@@ -22,6 +29,8 @@
   border: 1px #ededed solid;
   border-radius: 2px;
   margin: 20px 15%;
+  width: 80%;
+  max-width: 800px;
   padding: 40px 0;
 }
 

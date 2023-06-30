@@ -18,7 +18,7 @@ function Intro() {
           className="intro-img"
           src={require("./sean1.png")}
           alt="sean-bitmoji"
-          width="400"
+          width="350"
         />
       </div>
     </div>

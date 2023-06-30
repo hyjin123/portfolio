@@ -13,7 +13,7 @@ function About() {
 
         <p>
           - Worked 2 years as an engineer and 4 years as a customer service
-          specialist
+          specialist.
         </p>
         <p>
           - However I realized I wanted to become a programming because of my
