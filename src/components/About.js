@@ -7,9 +7,14 @@ function About() {
       <div className="about-container" id="about">
         <h2 className="about-header">About me</h2>
         <p>
-          I am a full stack developer eager to get started in a career of web
-          development. Always positive, hard-working, and eager to learn new
-          things!
+          - Graduated from University of Waterloo in Chemical Engineering in
+          2017. however I realized I wanted to become a programming because of
+          my passion for problem solving and building things.
+        </p>
+        <p></p>
+        <p>
+          Worked 2 years as an engineer and 4 years as a customer service
+          specialist
         </p>
       </div>
     </div>

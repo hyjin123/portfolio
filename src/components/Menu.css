@@ -10,7 +10,8 @@
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
-  transform: translateX(100%);
+  transform: translateX(110%);
+  z-index: 2;
 }
 
 .style2 {
@@ -25,6 +26,7 @@
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .hashlink {
