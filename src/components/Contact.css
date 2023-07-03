@@ -85,3 +85,7 @@ input:hover {
   cursor: pointer;
   transform: translate(0, -4px);
 }
+
+.contact-svg {
+  background-color: #eae7dc;
+}
