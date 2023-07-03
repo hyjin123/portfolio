@@ -6,7 +6,20 @@ function About() {
     <>
       <div className="about-main-container">
         <div className="about-container" id="about">
+          <img
+            className="about-img"
+            src={require("./flower1.png")}
+            alt="sean-bitmoji"
+            max-width="30%"
+          />
+          <img
+            className="about-img2"
+            src={require("./flower4.png")}
+            alt="sean-bitmoji"
+            max-width="30%"
+          />
           <h2 className="about-header">About me</h2>
+
           <p>
             - Graduated from University of Waterloo in Chemical Engineering in
             2017.

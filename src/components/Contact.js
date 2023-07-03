@@ -35,7 +35,7 @@ function Contact() {
         <path
           fill="white"
           fill-opacity="1"
-          d="M0,192L1440,32L1440,0L0,0Z"
+          d="M0,64L1440,160L1440,0L0,0Z"
         ></path>
       </svg>
     </>
