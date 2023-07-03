@@ -1,3 +1,9 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 .projects-container {
   color: black;
   background-color: #eae7dc;
@@ -9,4 +15,8 @@
 
 .projects-header {
   color: #ee4e34;
+}
+
+svg {
+  background-color: white;
 }
