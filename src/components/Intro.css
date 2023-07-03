@@ -40,6 +40,10 @@
   margin: 10px;
 }
 
+.intro-svg {
+  background-color: white;
+}
+
 .see-projects {
   width: 55%;
   padding: 10px 4em;

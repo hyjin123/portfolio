@@ -19,7 +19,7 @@
 }
 
 .about-svg {
-  background-color: #eae7dc;
+  background-color: #accdc6;
 }
 
 .about-img {
@@ -28,7 +28,7 @@
   left: -5%;
   /* display: inline-block; */
   width: 30%;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   transform: rotate(30deg) scaleX(-1);
 }
@@ -39,7 +39,22 @@
   right: -5%;
   /* display: inline-block; */
   width: 25%;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   transform: rotate(320deg) scaleX(-1);
+}
+
+.about-header-text {
+  font-size: 1em;
+  color: #7272ff;
+  font-weight: 650;
+}
+
+.about-text {
+  font-size: 0.8em;
+}
+
+button {
+  width: 40%;
+  margin: 15px auto;
 }

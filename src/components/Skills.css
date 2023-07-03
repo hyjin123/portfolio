@@ -4,9 +4,9 @@ body {
   padding: 0;
 }
 
-.projects-container {
+.skills-container {
   color: black;
-  background-color: #eae7dc;
+  background-color: #accdc6;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,15 +14,15 @@ body {
   position: relative;
 }
 
-.projects-header {
+.skills-header {
   color: #ee4e34;
 }
 
-.project-svg {
-  background-color: white;
+svg {
+  background-color: #eae7dc;
 }
 
-.project-img {
+.skills-img {
   position: absolute;
   bottom: -3%;
   right: -5%;

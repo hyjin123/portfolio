@@ -10,29 +10,38 @@ function About() {
             className="about-img"
             src={require("./flower1.png")}
             alt="sean-bitmoji"
-            max-width="30%"
           />
           <img
             className="about-img2"
-            src={require("./flower4.png")}
+            src={require("./flower-test-1.png")}
             alt="sean-bitmoji"
-            max-width="30%"
           />
-          <h2 className="about-header">About me</h2>
+          <p>About</p>
+          <h2 className="about-header">Who is Sean?</h2>
 
-          <p>
-            - Graduated from University of Waterloo in Chemical Engineering in
-            2017.
+          <p className="about-header-text">
+            Curiosity-driven Full Stack Web Developer with passion for building
+            things.
           </p>
 
-          <p>
-            - Worked 2 years as an engineer and 4 years as a customer service
-            specialist.
+          <p className="about-text">
+            I have a BASc in Chemical Engineering from University of Waterloo 🇨🇦
+            and a Full Stack Web Development Certificate from Lighthouse Labs,
+            Inc.
           </p>
-          <p>
-            - However I realized I wanted to become a programming because of my
-            passion for problem solving and building things.
+          <p className="about-text">
+            I also have 2 years of experience working as an engineer and 4 years
+            of experience working as a Customer Renewals Specialist. I realized
+            I wanted to become a programming because of my passion for problem
+            solving and building things.
           </p>
+          <p className="about-text">
+            After many years of working, I realized I wanted to become a
+            programmer because of my passion for problem solving and building
+            things. I am the happiest when I am building and coding things that
+            I am passionate about.
+          </p>
+          <button type="submit"> Contact me!</button>
         </div>
       </div>
       <svg
