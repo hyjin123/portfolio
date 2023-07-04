@@ -14,8 +14,14 @@
   position: relative;
 }
 
-.about-header {
+.about-main-header {
   color: #ee4e34;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-header {
+  color: #092c6a;
 }
 
 .about-svg {
@@ -48,10 +54,12 @@
   font-size: 1em;
   color: #7272ff;
   font-weight: 650;
+  padding: 0 30px;
 }
 
 .about-text {
   font-size: 0.8em;
+  padding: 0 30px;
 }
 
 button {

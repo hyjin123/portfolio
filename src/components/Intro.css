@@ -48,9 +48,11 @@
   width: 55%;
   padding: 10px 4em;
   background-color: #ee4e34;
+  color: white;
   border-radius: 5px;
   box-shadow: rgba(177, 126, 126, 0.24) 0px 3px 8px;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: 600;
   transition: transform 1s;
 }
 

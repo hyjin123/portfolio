@@ -11,8 +11,8 @@ function Skills() {
           alt="sean-bitmoji"
           max-width="30%"
         />
-        <h2 className="skills-header">Skills</h2>
-        <p>These are the skills and tools I use</p>
+        <p className="skills-main-header">Skills</p>
+        <h2 className="about-header">These are the things I can do!</h2>
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

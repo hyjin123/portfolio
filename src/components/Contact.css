@@ -68,8 +68,8 @@ label {
   margin-bottom: 8px;
 }
 
-button {
-  font-size: 0.65em;
+.contact-button {
+  font-size: 0.7em;
   font-weight: 600;
   padding: 12px 35px;
   margin-top: 20px;
@@ -81,9 +81,14 @@ button {
   transition: transform 1s;
 }
 
-input:hover {
+.see-projects:hover {
   cursor: pointer;
-  transform: translate(0, -4px);
+  transform: translate(0, -8px);
+}
+
+.contact-button:hover {
+  cursor: pointer;
+  transform: translate(0, -8px);
 }
 
 .contact-svg {

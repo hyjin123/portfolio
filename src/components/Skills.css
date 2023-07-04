@@ -32,3 +32,9 @@ svg {
   height: auto;
   transform: rotate(320deg) scaleX(-1);
 }
+
+.skills-main-header {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}

@@ -16,7 +16,7 @@ function About() {
             src={require("./flower-test-1.png")}
             alt="sean-bitmoji"
           />
-          <p>About</p>
+          <p className="about-main-header">About</p>
           <h2 className="about-header">Who is Sean?</h2>
 
           <p className="about-header-text">
@@ -31,17 +31,17 @@ function About() {
           </p>
           <p className="about-text">
             I also have 2 years of experience working as an engineer and 4 years
-            of experience working as a Customer Renewals Specialist. I realized
-            I wanted to become a programming because of my passion for problem
-            solving and building things.
+            of experience working as a Customer Renewals Specialist.
           </p>
           <p className="about-text">
             After many years of working, I realized I wanted to become a
             programmer because of my passion for problem solving and building
-            things. I am the happiest when I am building and coding things that
-            I am passionate about.
+            passion projects. I am the happiest when I am building, learning and
+            coding things that I am passionate about.
           </p>
-          <button type="submit"> Contact me!</button>
+          <button className="contact-button" type="submit">
+            Contact me!
+          </button>
         </div>
       </div>
       <svg

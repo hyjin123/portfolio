@@ -24,7 +24,9 @@ function Contact() {
             <label>Message</label>
             <textarea type="text" placeholder="Enter Your Message" />
           </div>
-          <button type="submit"> Submit</button>
+          <button className="contact-button" type="submit">
+            Submit
+          </button>
         </form>
       </div>
       <svg
