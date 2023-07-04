@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import "./Menu.css";
 
-function Menu({ hamburgerOpen, setHamburgerOpen, style }) {
+function Menu({ style }) {
   return (
     <nav className={style}>
       <HashLink
