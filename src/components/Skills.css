@@ -38,3 +38,27 @@ svg {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+i {
+  font-size: 3em;
+}
+
+/* change the color of the icons */
+.icons {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px 15px;
+}
+
+/* this allows 4 items per row */
+.icons-child {
+  flex: 1 0 21%;
+}
+
+.icon-name {
+  font-size: 0.65em;
+  color: black;
+}

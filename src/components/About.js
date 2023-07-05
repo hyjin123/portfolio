@@ -4,8 +4,8 @@ import "./About.css";
 function About() {
   return (
     <>
-      <div className="about-main-container">
-        <div className="about-container" id="about">
+      <div className="about-main-container" id="about">
+        <div className="about-container">
           <img
             className="about-img"
             src={require("./flower1.png")}

@@ -30,7 +30,7 @@
 
 .about-img {
   position: absolute;
-  top: 0%;
+  top: 6%;
   left: -5%;
   /* display: inline-block; */
   width: 30%;
@@ -41,7 +41,7 @@
 
 .about-img2 {
   position: absolute;
-  top: -3%;
+  top: 4%;
   right: -5%;
   /* display: inline-block; */
   width: 25%;
