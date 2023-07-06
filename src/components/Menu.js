@@ -6,7 +6,7 @@ function Menu({ style }) {
   return (
     <nav className={style}>
       <HashLink
-        className="hashlink"
+        className={`hashlink hashlink${style}a`}
         to="#home"
         scroll={(el) =>
           el.scrollIntoView({
@@ -18,7 +18,7 @@ function Menu({ style }) {
         Home
       </HashLink>
       <HashLink
-        className="hashlink"
+        className={`hashlink hashlink${style}b`}
         to="#about"
         scroll={(el) =>
           el.scrollIntoView({
@@ -30,7 +30,7 @@ function Menu({ style }) {
         About
       </HashLink>
       <HashLink
-        className="hashlink"
+        className={`hashlink hashlink${style}c`}
         to="#skills"
         scroll={(el) =>
           el.scrollIntoView({
@@ -42,7 +42,7 @@ function Menu({ style }) {
         Skills
       </HashLink>
       <HashLink
-        className="hashlink"
+        className={`hashlink hashlink${style}d`}
         to="#projects"
         scroll={(el) =>
           el.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -51,7 +51,7 @@ function Menu({ style }) {
         Projects
       </HashLink>
       <HashLink
-        className="hashlink"
+        className={`hashlink hashlink${style}e`}
         to="#contact"
         scroll={(el) =>
           el.scrollIntoView({ behavior: "smooth", block: "start" })
