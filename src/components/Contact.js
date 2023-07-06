@@ -5,6 +5,12 @@ function Contact() {
   return (
     <>
       <div className="contact-container" id="contact">
+        <img
+          className="contact-img"
+          src={require("./pics/flower8.png")}
+          alt="sean-bitmoji"
+          max-width="30%"
+        />
         <h2 className="contact-header">Contact Me</h2>
         <p>
           Feel free to contact me by submitting the form below and I will get

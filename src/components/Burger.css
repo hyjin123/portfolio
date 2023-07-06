@@ -34,6 +34,11 @@
   transform-origin: 1px;
 }
 
+/* hovering on button is not working atm */
+.hambuger-button:hover .hamburger-div-style2:first-child {
+  background: red;
+}
+
 .hamburger-div-style2:first-child {
   transform: rotate(45deg);
 }

@@ -6,8 +6,8 @@ function Skills() {
     <>
       <div className="skills-container" id="skills">
         <img
-          className="skills-img"
-          src={require("./flower2.png")}
+          className="skills-img2"
+          src={require("./pics/flower7.png")}
           alt="sean-bitmoji"
           max-width="30%"
         />
