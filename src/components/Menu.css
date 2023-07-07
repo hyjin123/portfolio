@@ -41,6 +41,8 @@
   text-decoration: none;
   transform: translateY(0%);
   opacity: 0;
+  /* transition for the hover on menu is not working :( */
+  transition: color 1s linear;
 }
 
 .hashlink:hover {
@@ -75,4 +77,24 @@
   transform: translateY(8%);
   opacity: 1;
   transition: transform 0.9s ease-out 0.8s, opacity 1.2s ease-out 0.8s;
+}
+
+.hashlinkstyle1a {
+  opacity: 0;
+}
+
+.hashlinkstyle1b {
+  opacity: 0;
+}
+
+.hashlinkstyle1c {
+  opacity: 0;
+}
+
+.hashlinkstyle1d {
+  opacity: 0;
+}
+
+.hashlinkstyle1e {
+  opacity: 0;
 }

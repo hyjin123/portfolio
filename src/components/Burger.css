@@ -34,9 +34,8 @@
   transform-origin: 1px;
 }
 
-/* hovering on button is not working atm */
-.hambuger-button:hover .hamburger-div-style2:first-child {
-  background: red;
+.hamburger-button:hover .hamburger-div-style2 {
+  background: #eae7dc;
 }
 
 .hamburger-div-style2:first-child {
