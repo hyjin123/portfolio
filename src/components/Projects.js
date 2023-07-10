@@ -8,8 +8,14 @@ function Projects() {
   const [ref, inView] = useInView();
 
   const boxVariant = {
-    visible: { opacity: 1, scale: 1 },
-    hidden: { opacity: 0, scale: 0 },
+    visible: {
+      opacity: 1,
+      scaleX: -1,
+      rotate: 40,
+      translateX: 0,
+      transition: { delay: 0.5 },
+    },
+    hidden: { opacity: 1, scaleX: -1, rotate: 40, translateX: 130 },
   };
 
   useEffect(() => {
