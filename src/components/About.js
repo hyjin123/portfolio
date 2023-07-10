@@ -1,17 +1,60 @@
-import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import "./About.css";
 
 function About() {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  const boxVariant = {
+    visible: {
+      opacity: 1,
+      scaleX: -1,
+      rotate: 330,
+      translateX: 0,
+      transition: { type: "tween", duration: 1 },
+    },
+    hidden: { opacity: 1, scaleX: -1, rotate: 330, translateX: -130 },
+  };
+
+  const boxVariant2 = {
+    visible: {
+      opacity: 1,
+      scaleX: -1,
+      rotate: 30,
+      translateX: 0,
+      transition: { type: "tween", duration: 1 },
+    },
+    hidden: { opacity: 1, scaleX: -1, rotate: 30, translateX: 130 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
     <>
       <div className="about-main-container" id="about">
         <div className="about-container">
-          <img
+          <motion.img
+            ref={ref}
+            animate={control}
+            initial="hidden"
+            variants={boxVariant}
             className="about-img"
             src={require("./flower1.png")}
             alt="sean-bitmoji"
           />
-          <img
+          <motion.img
+            ref={ref}
+            animate={control}
+            initial="hidden"
+            variants={boxVariant2}
             className="about-img2"
             src={require("./flower-test-1.png")}
             alt="sean-bitmoji"

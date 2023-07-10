@@ -13,7 +13,7 @@ function Projects() {
       scaleX: -1,
       rotate: 40,
       translateX: 0,
-      transition: { delay: 0.5 },
+      transition: { type: "tween", duration: 1 },
     },
     hidden: { opacity: 1, scaleX: -1, rotate: 40, translateX: 130 },
   };

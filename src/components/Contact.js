@@ -1,11 +1,39 @@
-import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  const boxVariant = {
+    visible: {
+      opacity: 1,
+      scaleX: -1,
+      rotate: 310,
+      translateX: 0,
+      transition: { type: "tween", duration: 1 },
+    },
+    hidden: { opacity: 1, scaleX: -1, rotate: 310, translateX: -130 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
     <>
       <div className="contact-container" id="contact">
-        <img
+        <motion.img
+          ref={ref}
+          animate={control}
+          initial="hidden"
+          variants={boxVariant}
           className="contact-img"
           src={require("./pics/flower8.png")}
           alt="sean-bitmoji"

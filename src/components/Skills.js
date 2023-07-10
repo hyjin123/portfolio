@@ -1,15 +1,43 @@
-import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import "./Skills.css";
 
 function Skills() {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  const boxVariant = {
+    visible: {
+      opacity: 1,
+      scaleX: -1,
+      rotate: 315,
+      translateX: 0,
+      transition: { type: "tween", duration: 1 },
+    },
+    hidden: { opacity: 1, scaleX: -1, rotate: 315, translateX: -130 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
     <>
       <div className="skills-container" id="skills">
-        <img
+        <motion.img
+          ref={ref}
           className="skills-img2"
           src={require("./pics/flower7.png")}
           alt="sean-bitmoji"
           max-width="30%"
+          animate={control}
+          initial="hidden"
+          variants={boxVariant}
         />
         <p className="skills-main-header">Skills</p>
         <h2 className="about-header">Things I can do!</h2>
