@@ -2,6 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import "./Skills.css";
+import SkillsList from "./SkillsList";
 
 function Skills() {
   const control = useAnimation();
@@ -26,6 +27,25 @@ function Skills() {
     }
   }, [control, inView]);
 
+  const skillsList = [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+    "Nodejs",
+    "Express",
+    "jQuery",
+    "Bootstrap",
+    "TailwindCSS",
+    "PostgreSQL",
+    "Firebase",
+    "Git",
+    "Github",
+    "VSCode",
+  ];
+
+  const mappedList = skillsList.map((item) => <SkillsList skill={item} />);
+
   return (
     <>
       <div className="skills-container" id="skills">
@@ -44,64 +64,7 @@ function Skills() {
         <p className="about-text">
           Technologies, skills, and tools I use to make amazing projects
         </p>
-        <div className="icons">
-          <div className="icons-child">
-            <i class="devicon-html5-plain"></i>
-            <p className="icon-name">HTML5</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-css3-plain"></i>
-            <p className="icon-name">CSS3</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-javascript-plain"></i>
-            <p className="icon-name">JavaScript</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-react-plain"></i>
-            <p className="icon-name">React</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-nodejs-plain"></i>
-            <p className="icon-name">Node.js</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-express-original"></i>
-            <p className="icon-name">Express</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-jquery-plain"></i>
-            <p className="icon-name">jQuery</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-bootstrap-plain"></i>
-            <p className="icon-name">Bootstrap</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-tailwindcss-original-wordmark"></i>
-            <p className="icon-name">Tailwind CSS</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-postgresql-plain"></i>
-            <p className="icon-name">PostgresSQL</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-firebase-plain"></i>
-            <p className="icon-name">Firebase</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-git-plain"></i>
-            <p className="icon-name">Git</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-github-original"></i>
-            <p className="icon-name">Github</p>
-          </div>
-          <div className="icons-child">
-            <i class="devicon-vscode-plain"></i>
-            <p className="icon-name">VS Code</p>
-          </div>
-        </div>
+        <div className="icons">{mappedList}</div>
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
