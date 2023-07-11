@@ -44,7 +44,9 @@ function Skills() {
     "VSCode",
   ];
 
-  const mappedList = skillsList.map((item) => <SkillsList skill={item} />);
+  const mappedSkillsList = skillsList.map((item) => (
+    <SkillsList skill={item} />
+  ));
 
   return (
     <>
@@ -64,7 +66,7 @@ function Skills() {
         <p className="about-text">
           Technologies, skills, and tools I use to make amazing projects
         </p>
-        <div className="icons">{mappedList}</div>
+        <div className="icons">{mappedSkillsList}</div>
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
